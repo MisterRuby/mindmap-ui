@@ -23,7 +23,7 @@
     <input
       class="text"
       type="text"
-      :value="text"
+      :value="props.text"
       placeholder="Please enter the central topic"
     />
   </div>
@@ -33,20 +33,20 @@ const props = defineProps({
   width: {
     type: Number,
     default: 160,
-    required: false,
   },
   height: {
     type: Number,
     default: 40,
-    required: false,
+  },
+  text: {
+    type: String,
+    default: "",
   },
 });
 
-const text = ref<string>("");
-
-const textTransform = computed<string>(() => {
-  return `translate(${props.width / 2}, ${props.height / 2})`;
-});
+// const textTransform = computed<string>(() => {
+//   return `translate(${props.width / 2}, ${props.height / 2})`;
+// });
 
 const viewBox = computed<string>(() => {
   return `0 0 ${props.width} ${props.height}`;
