@@ -1,5 +1,6 @@
 <template>
-  <HelloWorld />
+  <!-- <HelloWorld /> -->
+  <CentralTopic />
 </template>
 
 <script lang="ts" setup>
