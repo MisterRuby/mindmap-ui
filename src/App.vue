@@ -7,5 +7,14 @@
 </template>
 
 <script lang="ts" setup>
-  //
+//
 </script>
+
+<style>
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+</style>

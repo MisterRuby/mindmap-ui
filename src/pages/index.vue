@@ -1,6 +1,6 @@
 <template>
   <!-- <HelloWorld /> -->
-  <div class="fill-height">
+  <!-- <div class="fill-height">
     <Node
       v-for="node in nodes"
       :key="node.text"
@@ -11,7 +11,8 @@
       :text="node.text"
       :fill="node.fill"
     ></Node>
-  </div>
+  </div> -->
+  <Board />
 </template>
 
 <script lang="ts" setup>
@@ -34,8 +35,7 @@ const nodes = ref<object>([
 
 <style>
 .fill-height {
-  position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 </style>
